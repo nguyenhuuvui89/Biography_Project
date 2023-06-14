@@ -1,0 +1,126 @@
+.main_con{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+.main_con section {
+    display: grid;
+    grid-template-rows: auto;
+    background: url(../pic/julien-tromeur-cartoon.jpg) no-repeat;
+    background-size: contain;
+    background-color: rgb(166, 229, 229,0.5);
+}
+.summary{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    padding: 5vh 10vw; 
+
+}
+.summary p {
+    text-align: center;
+}
+.experience {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+} 
+.experience ol{
+    list-style: none;
+}
+
+.oil_field {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    row-gap: 10vh;
+    align-items: center;
+    column-gap: 10vw;
+    padding-top: 10vh;
+    background: url(../pic/ken-mathiasen-oil_rig.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.rig {
+    display: grid;
+    grid-template-columns: auto;
+}
+.rig img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 90%;
+    border-radius: 15px;
+    filter: sepia(0.5);
+    opacity: 0.5;
+    animation: display 7s ease-in-out infinite;
+}
+
+.rig_life {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    color: aliceblue;
+    background-color: rgb(207, 179, 179,0.9);
+}
+.rig_life iframe {
+    height: 50vh;
+    width: 40vw;
+    
+}
+.description {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 10vw; 
+}
+
+.intel {
+    display: flex;
+    align-items: center;
+    gap: 15%;
+    justify-content: space-around;
+    padding-bottom: 40px;
+    background: url(../pic/slejven-djurakovic-chiph.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(14, 22, 176);
+    padding-top: 20px;
+}
+.intel p, figcaption{
+    width: 50vw;
+    height: auto;
+    padding-left: 20px;
+    text-align: justify;
+    background-color: rgb(255, 228, 196,0.6);
+    border-radius: 10px;
+    padding-right: 10px;
+}
+.intel span {
+    color: black;
+    font-weight: bold;
+}
+.intel h2{
+    display: none;
+}
+.intel img, figcaption{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    border-radius: 25px;  
+    filter: sepia(0.2);
+    opacity: 0.5;
+    animation: display 7s ease-in-out infinite;
+}
+@keyframes display {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}

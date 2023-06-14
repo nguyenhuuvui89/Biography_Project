@@ -1,0 +1,64 @@
+main {
+    background: url(../pic/joanna-kosinska.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #E6E6FA;
+}
+section h2 {
+    text-align: center;
+    padding: 3%;
+    font-size: 80px;
+    font-family: 'Dancing Script', cursive;
+}
+ol {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.vn_uni, .bu {
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+    align-items: center;
+}
+.vn_uni figure  img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 90%;
+    border-radius: 15px;
+}
+figure {
+    padding: 10px 10px 0 15px;
+}
+figure figcaption, .note{
+    font-style: italic;
+    font-size: 13px;
+}
+.aside_note {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+.describe, .courses {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+    padding: 0 15%;
+}
+.uni_name, .boston {
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.video_intro iframe {
+    height: 50vh;
+    width: 40vw;
+}
+.video_intro {
+    padding-bottom: 15px;
+}
+.video_intro a {
+    color: #fff;
+    font-style: italic;
+}

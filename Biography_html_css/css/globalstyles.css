@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Poppins&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+.active {
+    background-color: #a1ca30;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10%;
+    background-color: rgb(23, 174, 159,0.5);
+    background-image: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%);
+    border-radius: 5px;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    align-self: start;
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+} 
+.navigation a{
+    color: rgb(114, 20, 176);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .2s;
+    border-radius: 10px;
+    padding: 0 5px;
+    font-family: cursive;
+}
+.navigation a:hover {
+    color: black; 
+    transform: scale(1.2);
+}
+
+/* Css Button */
+.button-b a, .bttn button {
+    border-radius: 10px;
+    margin-left: 50px;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #F5F5DC;
+    padding: 4px;
+    position: relative;
+    border: 2px solid #00BFFF;
+    overflow: hidden;
+    z-index: 1;
+}
+.button-b a::before, .bttn button::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #F5DEB3;
+    border-radius: 8px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.button-b a:hover::before, .bttn button:hover::before {
+    width: 100%;  
+}
+
+.button-b a:hover, .bttn button:hover  {
+    color: black;
+}
+/* ---footer---- */
+footer {
+    background-color: rgb(19, 27, 48);
+    color: hsla(217, 24%, 59%, 1);
+}
+.top-footer {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.footer-col1 ul{
+    list-style: none;
+}
+.footer-col1 h4 {
+    margin: 25px 0;
+    font-size: 18px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+
+}
+
+.footer-col1 h4::before {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(to right, #0ea5ea,#adb219, #a61fab);
+    position: absolute;
+    bottom: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.4s;
+}
+.footer-col1 h4:hover::before {
+    transform: translate(-50%,5px);
+}
+.footer-col1 ul li {
+    padding: 5px 0;
+    font-size: 14px;
+    color: hsla(217, 24%, 59%, 1);
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+.footer-col1 ul li:hover{
+    color: #fff;
+    transition: 0.6s;
+}
+.copy-right summary {
+    font-size: 14px;
+    color: hsla(217, 24%, 59%, 1);
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.social {
+    padding-right: 100px;
+}
+.social a {
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+    color: #fff;
+}
+.social a:hover {
+    transform: scale(1.5);
+
+}
+footer hr{
+    opacity: 0.6;
+    color: hsla(217, 24%, 59%, 1)
+}
+
+/* Responsive with media query. The navigation bar will switch to vertical
+using flex, logo will change color and font style change to italic, text will be in the 
+middle of header. header background color will change, as well as footer article and social media logo will be disappear
+with the footer background color will change.  */
+/* @media (max-width: 640px) {
+    .navigation {
+        flex-flow: column wrap;
+        display: flex;
+    }
+    .logo {
+        font-style: italic;
+        color: #fd5949;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    header {
+        background-color: #B7C4CF;
+    }
+    .footer-c, .social{
+        display: none;
+    }
+    footer {
+        height: 8vh;
+        background-color: #d6249f;
+    }
+} */
+
+   

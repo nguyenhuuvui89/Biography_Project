@@ -1,0 +1,144 @@
+.main_fa {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+}
+/*CSS for family section */
+.family_v {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 40vh auto;
+    row-gap: 1vh;
+    column-gap: 1vw;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../pic/anders-jilden.jpg);
+    background-size:cover;
+    background-position: center;
+    filter: sepia(0.4);
+    color: #ffffff;
+}   
+.title span {
+    font-size: 60px;
+    padding-left: 50px;
+    font-family: 'Dancing Script', sans-serif, cursive; 
+}
+.title span:first-child {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.pic {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1vw;
+    padding-left: 10px;
+}
+.kid {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    filter: opacity(0.85)
+}
+figure {
+    height: 85%;
+}
+figure figcaption {
+    font-size: 13px;
+    font-style: italic;
+}
+.pic_text{
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+}
+.pic_text img {
+    border-radius: 20px;
+    width: 45%;
+    height: 70%;
+    float:left;
+    padding-right: 10px;
+    filter: opacity(0.85)
+}
+.pic_text button {
+    background-color: #FF4500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.interest span{
+    font-size: 60px;
+    font-weight: 800;
+    font-family: 'Dancing Script', sans-serif, cursive; 
+}
+
+ /*Css for Interest section */
+ 
+ .interest {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    row-gap: 17px;
+ }
+ .interest span {
+    font-size: 2rem;
+    font-weight: 400;
+ }
+ .interest p {
+    padding: 1% 10% 2% 5%;
+    font-weight: 200;
+    font-size: 1rem;
+ }
+ .interest_pic img {
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 10px;
+ }
+.travel {
+    display: grid;
+    grid-template-columns:1.5fr 1fr;
+    background-color: #DCDCDC;
+    /* grid-template-rows: 40%; */
+ }
+ .travel article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-style: italic;
+    padding: 0% 10%;
+ }
+ .travel p{
+    font-size: 14px;
+ }
+ .travel table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+    font-weight: 200;
+    font-size: 1rem;
+ }
+ .travel th {
+    font-weight: 500;
+ }
+ .filming video{
+    width: 350px;
+    height: 350px;
+ }
+ .travel button {
+    background-color: #DDA0DD;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ .filming form {
+    border: 2px solid rgb(83, 13, 204);
+ }
+
