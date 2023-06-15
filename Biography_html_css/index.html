@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     <link rel="stylesheet" href="./css/globalstyles.css">
 
+    <script src="https://kit.fontawesome.com/b5afc0fae8.js" crossorigin="anonymous"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Poppins&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
@@ -18,18 +20,17 @@
     <header>
         <a href="#" class="logo">Portfolio</a>
         <nav class="navigation">
-          <a class="active" href="index.html">Home</a>
+          <a href="professional.html">Home</a>
           <a href="family.html">Family</a>
           <a href="education.html">Education</a>
           <a href="location.html">Home Town</a>
           <a href="hobbies.html">Hobbies</a>
-
-          <a href="professional.html">Professional</a>
           <a href="contact.html">Contact</a>
+          <a class="active" href="index.html">Log In</a>
         </nav>
     </header>
     <main class = "main">
-        <section class="introduction">
+        <!-- <section class="introduction">
             <figure class="profile">
                 <img src="./pic/vincent.jpeg" alt="Profile pic">
             </figure>
@@ -45,7 +46,87 @@
                         <a href="#">Let's Talk!</a>
                     </div>   
             </div>   
-        </section>
+        </section> -->
+            <section class="login-signup">
+                <form action="" class="log-in-form">
+                    <h3 class="log">Log in</h3>
+                    <div class="input-text">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-text">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Login" class="btn" id="login">
+                    <p class="social-text">Or Log in with social platform</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+                </form>
+                <form action="" class="sign-up">
+                    <h3 class="log">Sign up</h3>
+                    <div class="input-text">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-text">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-text">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Sign up" class="btn" id="signup">
+                    <p class="social-text">Or Sign up with social platform</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+                </form>
+            </section>
+            <section class="panels-container">
+                <div class="panel left-panel">
+                    <div class="content">
+                        <h3>Existing Customer?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.?</p>
+                        <button class="btn">Log in</button>
+                    </div>
+                    <img src="./pic/20944201.jpg" alt="" class="image">
+                </div>
+                <div class="panel right-panel">
+                    <div class="content">
+                        <h3>Welcome !</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+                        <button class="btn">Sign up</button>
+                    </div>
+                    <img src="./pic/6333213.jpg" alt="" class="image">
+                </div>
+            </section>
     </main>
     <footer>
         <section class="top-footer">
@@ -106,5 +187,6 @@
             </div>
         </section>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

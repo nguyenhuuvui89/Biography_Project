@@ -5,34 +5,34 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
 }
-
+:root {
+    font-size: 62.5%;
+}
 .active {
     display: relative;
-    padding: 10px;
+    padding: 1rem;
     opacity: 0.9;
     background-color: #85FFBD;
     background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 69%, #ffffff 100%);
 
   }
-  
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px 10%;
+    padding: 1rem 10%;
     background-color: rgb(23, 174, 159,0.5);
     background-image: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%);
-    border-radius: 5px;
+    border-radius: .5rem;
 }
 
 .logo {
     color: white;
-    font-size: 35px;
-    letter-spacing: 1px;
+    font-size: 3.5rem;
+    letter-spacing: .1rem;
     cursor: pointer;
     text-decoration: none;
     align-self: start;
@@ -44,17 +44,17 @@ header {
 .navigation {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 2rem;
 } 
 .navigation a{
     color: rgb(23, 20, 176);
-    font-size: 25px;
+    font-size: 1.8rem;
     text-decoration: none;
     font-weight: bolder;
     transition: .5s;
     border-radius: 10px;
-    padding: 0 5px;
-    font-family: 'Dancing Script', cursive;
+    padding: 0 .5rem;
+    font-family: 'Poppins', sans-serif;
     display: relative;
 }
 .navigation a:hover {
@@ -64,17 +64,17 @@ header {
 
 /* Css Button */
 .button-b a, .bttn button {
-    border-radius: 10px;
-    margin-left: 50px;
+    border-radius: 1rem;
+    margin-left: 5rem;
     background-color: transparent;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 1px;
     color: #F5F5DC;
-    padding: 4px;
+    padding: 0.4rem;
     position: relative;
-    border: 2px solid #00BFFF;
+    border: 0.2rem solid #00BFFF;
     overflow: hidden;
     z-index: 1;
 }
@@ -86,7 +86,7 @@ header {
     width: 0;
     height: 100%;
     background-color: #F5DEB3;
-    border-radius: 8px;
+    border-radius: 0.8rem;
     z-index: -1;
     transition: 0.5s;
 }
@@ -105,14 +105,14 @@ footer {
 .top-footer {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
 }
 .footer-col1 ul{
     list-style: none;
 }
 .footer-col1 h4 {
-    margin: 25px 0;
-    font-size: 18px;
+    margin: 2.5rem 0;
+    font-size: 1.8rem;
     position: relative;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
@@ -121,8 +121,8 @@ footer {
 
 .footer-col1 h4::before {
     content: '';
-    width: 60px;
-    height: 2px;
+    width: 6rem;
+    height: 0.2rem;
     background: linear-gradient(to right, #0ea5ea,#adb219, #a61fab);
     position: absolute;
     bottom: -25%;
@@ -131,11 +131,11 @@ footer {
     transition: 0.4s;
 }
 .footer-col1 h4:hover::before {
-    transform: translate(-50%,5px);
+    transform: translate(-50%,0.5rem);
 }
 .footer-col1 ul li {
-    padding: 5px 0;
-    font-size: 14px;
+    padding: 0.5rem 0;
+    font-size: 1.4rem;
     color: hsla(217, 24%, 59%, 1);
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
@@ -145,17 +145,18 @@ footer {
     transition: 0.6s;
 }
 .copy-right summary {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: hsla(217, 24%, 59%, 1);
     font-family: 'Ubuntu', sans-serif;
-    padding: 10px;
+    padding: 1rem;
 }
 .bottom {
     display: flex;
     justify-content: space-between;
 }
 .social {
-    padding-right: 100px;
+    padding-right: 10rem;
+    font-size: 2rem;
 }
 .social a {
     margin: 10px;

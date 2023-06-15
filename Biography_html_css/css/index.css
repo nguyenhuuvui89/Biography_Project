@@ -1,12 +1,170 @@
-* {
-    color: rgb(231, 237, 243);
+
+.main {
+    background-color: #D9AFD9;
+    background-image: linear-gradient(116deg, #D9AFD9 0%, #97D9E1 50%, #99ceac 100%);
+    font-size: 1.6rem;
+    position: relative;
+    height: 100vh;
 }
-main {
-    background: url(../pic/nature-3.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+
+
+.login-signup, .panels-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75rem;
+    height: 60rem;
+    margin:  0 auto;
+    text-align: center;
+    
+} 
+
+form, .panel {
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    row-gap: 1rem;
+ 
 }
-.introduction {
+form {
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, rgba(255, 222, 233,0.5) 0%, rgba(181, 255, 252,0.5) 100%);
+}
+.log {
+    font-size: 3rem;
+    line-height: 1.3;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: color-change 10s ease-in infinite;
+}
+@keyframes color-change {
+    0% {
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    50% {
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(62deg, #C850C0 46%, #baae97 100%,#5c6bb8 0%);
+
+    }
+    100% {
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #35b4b7 100%, #C850C0 46%);
+
+    }
+}
+.input-text {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 5rem;
+    margin: 1rem 0;
+    border: 0.2rem solid hsla(217, 24%, 59%, 1);
+    border-radius: 4.5rem;
+    flex-wrap: wrap;
+
+}
+.input-text input {
+    width: 100%;
+    flex: 4;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.input-text i {
+    flex: 1;
+    text-align: center;
+    color: #577e86;
+    font-size: 1.9rem;
+}
+.input-text input:hover {
+    color: #16106e;
+}
+
+.btn {
+    background-image: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
+    border-radius: .8rem;
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer; 
+    border: 1px solid gray;
+    color: #5b5555;
+}
+.btn:hover {
+    transform: translateY(-0.15rem);
+    box-shadow: 0 1rem 1rem rgb(14, 166, 236,0.1) 
+}
+
+.login-signup p{
+    font-size: 1.4rem;
+}
+.social-icon {
+    text-decoration: none;
+    margin-left: 0.7rem;
+    color: rgb(24, 17, 150);
+
+}
+/* 
+---panel---- */
+
+
+.panels-container {
+    margin: auto 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.panel {
+    position: relative;
+}
+.image {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+.content {
+    position: absolute;
+    top: 5%;
+    margin: 0 4rem;
+    color: #16106e;
+    font-family: 'Ubuntu', sans-serif;
+}
+.content h3 {
+    margin: 2.5rem 0;
+    font-size: 2.5rem;
+
+}
+.content p{
+    margin-bottom: 3rem;
+
+}
+/* ---Making disappear when switching-- */
+.left-panel {
+    visibility: hidden;
+    z-index: -1;
+}
+.log-in-form {
+    z-index: 1;
+}
+form, .panels-container {
+    opacity: 0.9;
+}
+
+
+
+/* .introduction {
     display: flex;
     justify-content: space-evenly;
     height: 100vh;
@@ -76,12 +234,9 @@ main {
     }
     50% {
         color: rgb(96, 6, 124);
-        /* letter-spacing: 7px; */
-        /* font-size: 40px; */
     }
     75% {
         color: rgb(180, 208, 25);
-        /* letter-spacing: 10px; */
     }
     100%{
         color: #FF1493;
@@ -96,10 +251,10 @@ main {
 .button-b {
     display: flex;
     justify-content: space-evenly;
-}
+} */
 
 /*Responsive web using @media query*/
-@media (max-width: 640px){
+/* @media (max-width: 640px){
      .navigation a{
         font-size: 10px;
     }
@@ -128,4 +283,4 @@ main {
         width: 80%;
         height: auto;
     }
-}
+} */
