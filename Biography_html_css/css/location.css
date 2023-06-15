@@ -35,7 +35,7 @@
 /*Css for newfoundland pictures and hover to get full pictures */
 .st_pic img {
   width: 150px;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
   transition: width 0.8s ease-in-out, filter 0.4s ease-in-out;
   filter: sepia(0.5);
@@ -43,7 +43,6 @@
   cursor: pointer;
 }
 .st_pic img:hover {
-  width: 600px;
+  width: 500px;
   filter: none;
-
 }
