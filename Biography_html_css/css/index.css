@@ -95,8 +95,9 @@ form {
     width: 8rem;
     height: 3rem;
     cursor: pointer; 
-    border: 1px solid gray;
+    border: none;
     color: #5b5555;
+    transition: 0.3s;
 }
 .btn:hover {
     transform: translateY(-0.15rem);

@@ -1,7 +1,13 @@
+
 .main_fa {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #bdbfd0;
+    background-image: linear-gradient(65deg, #80ac9f 10%, #b1cddf 38%, #acaed6 69%, #c4deb7 86%);
+    ;
 }
 /*CSS for family section */
 .family_v {
@@ -25,75 +31,118 @@
     color: #ffffff;
 }   
 .title span {
-    font-size: 60px;
-    padding-left: 50px;
+    font-size: 6.5rem;
+    padding-left: 5rem;
     font-family: 'Dancing Script', sans-serif, cursive; 
 }
 .title span:first-child {
-    font-size: 20px;
+    font-size: 2.5rem;
     font-weight: 300;
 }
+/* ---Abum-- */
 
-.pic {
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 1vw;
-    padding-left: 10px;
-}
-.kid {
-    border-radius: 15px;
-    width: 100%;
-    height: 100%;
-    filter: opacity(0.85)
-}
-figure {
-    height: 85%;
-}
-figure figcaption {
-    font-size: 13px;
-    font-style: italic;
-}
-.pic_text{
-    width: 100%;
-    height: 100%;
+.ptext {
+    margin: 5rem 40rem;
     text-align: justify;
 }
-.pic_text img {
-    border-radius: 20px;
-    width: 45%;
-    height: 70%;
-    float:left;
-    padding-right: 10px;
-    filter: opacity(0.85)
+.gallery{
+    width: 80rem;
+    max-width: 80rem;
+    height: 70rem;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
 }
-.pic_text button {
-    background-color: #FF4500;
-    border-radius: 5px;
-    cursor: pointer;
+ .gallery .images{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s; 
+    filter: sepia(0.3);
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+.item .kid {
+    width: 80rem;
+    max-width: 80rem;
+    height: 94%;
+    object-fit: contain;
 }
 
+.gallery .buttons{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 90%;
+    transform: translate(-5%,-50%);
+    
+}
+.buttons button{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: rgba(89, 168, 153, 0.333);
+    color: #6f819f;
+    border: none;
+    cursor: pointer;
+}
+.dot-bar{
+    position: absolute;
+    bottom: 7rem;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.dot-bar li{
+    height: 1rem;
+    background-color: rgb(108, 154, 178);
+    margin: 1rem;
+    border-radius: 20px;
+    transition: 0.2s;
+    width: 1rem;
+    list-style: none;
+
+}
+.gallery .act{
+    width: 30px;
+    background-color: rgb(52, 8, 156);
+}
+
+ /*Css for Interest section */
 .interest span{
     font-size: 60px;
     font-weight: 800;
     font-family: 'Dancing Script', sans-serif, cursive; 
 }
 
- /*Css for Interest section */
+
  
  .interest {
+    padding: 15rem 0 0;
     display: grid;
     grid-template-rows: auto auto auto;
     text-align: center;
-    row-gap: 17px;
+    row-gap: 5rem;
  }
  .interest span {
-    font-size: 2rem;
+    font-size: 6rem;
     font-weight: 400;
  }
  .interest p {
     padding: 1% 10% 2% 5%;
     font-weight: 200;
-    font-size: 1rem;
  }
  .interest_pic img {
     width: 30%;
@@ -104,8 +153,7 @@ figure figcaption {
 .travel {
     display: grid;
     grid-template-columns:1.5fr 1fr;
-    background-color: #DCDCDC;
-    /* grid-template-rows: 40%; */
+    grid-template-rows: 85vh;
  }
  .travel article {
     display: flex;
@@ -129,16 +177,22 @@ figure figcaption {
  .travel th {
     font-weight: 500;
  }
+ .filming {
+    width: 70%;
+    
+ }
  .filming video{
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: 65%;
+    margin-top: 20%;
  }
  .travel button {
-    background-color: #DDA0DD;
-    border-radius: 5px;
-    cursor: pointer;
+    background-image: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
+    cursor: pointer; 
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;            
  }
- .filming form {
-    border: 2px solid rgb(83, 13, 204);
- }
-
+ 

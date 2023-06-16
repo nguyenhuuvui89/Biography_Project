@@ -185,6 +185,7 @@
     padding: 10px;
     text-decoration: none;
     border-radius: 8px;
+    border: none;
  }
 .contact-me a:hover {
     background-image: linear-gradient(90deg, #24b927, hwb(295 13% 33%) 51%, #8d0c15);
