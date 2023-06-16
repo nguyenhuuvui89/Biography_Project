@@ -6,6 +6,9 @@ const panelLoginBtn = panelLoginForm.querySelector('.btn');
 const signUpForm = document.querySelector('.sign-up');
 const loginForm = document.querySelector('.log-in-form');
 
+const loginLink = signUpForm.querySelector('#sign-in-btn2');
+const signUpLink = loginForm.querySelector('#sign-up-btn2');
+
 function signUp() {
   panelSignUpForm.style.visibility = 'hidden';
   signUpForm.style.zIndex = '1';
@@ -24,5 +27,8 @@ function logIn() {
 
 // ---Show sign up form when click to sign up button---
 panelSignUpBtn.addEventListener('click', signUp);
+signUpLink.addEventListener('click', signUp);
+
 // ---Show log in form when click to login button---
 panelLoginBtn.addEventListener('click', logIn);
+loginLink.addEventListener('click', logIn);
