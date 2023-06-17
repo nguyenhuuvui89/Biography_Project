@@ -202,7 +202,28 @@
  }
  
 /* ---Responsive--- */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
+    :root {
+        font-size: 25%;
+    }
+    .ptext {
+        margin: 5rem 5rem;
+        text-align: justify;
+    }
+    .main_fa {
+        font-size: 2.5rem;
+    }
+    article p{
+        font-size: 2.5rem;
+    }
+    article table{
+        font-size: 2rem;        
+    }
+    .travel{
+        margin: 20% 0;
+    }
+}
+@media screen and (min-width:481px) and (max-width: 576px) {
     :root {
         font-size: 30%;
     }
