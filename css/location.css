@@ -78,7 +78,7 @@ main {
 }
 
 #searchForm {
-  height: 5vw;
+  height: 10vh;
   width: 50vw;
   position: relative;
   overflow: hidden;
@@ -113,7 +113,8 @@ main {
   width: 13rem;
   height: 5rem;
   color: #000000;
-  margin: 0 50vw;
+  margin: 0 50%;
+  transform: translateX(-50%);
   visibility: hidden;
   margin-bottom: 5rem;
 }
@@ -132,10 +133,40 @@ main {
   border-radius: 1rem;
 }
 .error {
-  margin: 0 40vw;
   font-size: 1.5rem;
   font-style: italic;
   color: rgb(188, 96, 96);
   font-weight: lighter;
-  width: 50rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* ---Responsive--- */
+@media screen and (max-width: 767px) {
+  :root {
+    font-size: 50%;
+  }
+  .st_pic img:hover {
+    width: 30rem;
+  }
+  #searchForm {
+    height: 7vh;
+    width: 50vw;
+  }
+  #searchForm button {
+    width: 30%;
+  }
+  .result img{
+    width: 100%;
+    height: 15rem;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  #searchForm button {
+    width: 25%;
+  }
+  .st_pic img:hover {
+    width: 30rem;
+  }
 }

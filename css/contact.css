@@ -161,3 +161,13 @@ form label {
 .map_google iframe:hover {
     opacity: 1;
 }
+/* ---Responsive--- */
+@media screen and (max-width: 767px) {
+    .connect {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_m {
+        display: none;
+    }
+}

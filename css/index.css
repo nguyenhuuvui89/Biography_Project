@@ -165,125 +165,18 @@ form, .panels-container {
     opacity: 0.9;
 }
 
-
-
-/* .introduction {
-    display: flex;
-    justify-content: space-evenly;
-    height: 100vh;
-    flex-wrap: wrap;
-    align-items: center;
-    column-gap: 200px;
-}
-.welcome {
-    text-align: justify;
-    width: 40%;
-    height: 30%;
-}
-.profile {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-left: 25%;
-    margin-bottom: 8%;
-    filter: opacity(50%);
-    animation: moving 10s ease-in-out infinite;
-}
-.profile img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-}
-@keyframes moving {
-    0% {
-        transform: translateX(0);
-        filter: opacity(90%);
+/* ---Responsive--- */
+@media screen and (max-width: 767px) {
+    .login-signup, .panels-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 35rem;
+        height: 80rem;
     }
-    25%{
-        transform: translateX(50px);
-        border: 2px dashed rgb(11, 103, 143);
-        filter: opacity(60%);
+    .log-in-form{
+        padding-bottom: 8rem;
     }
-    50%{
-        transform: translateX(0);
-        filter: opacity(90%);
-    }
-    75% {
-        transform: translateX(-50px);
-        border: 2px dashed rgb(169, 63, 169);
-        filter: opacity(60%);
-    }
-    100% {
-        transform: translateX(0);
+    form, .panel{
+        margin: 0;
     }
 }
-.welcome h1{
-    font-size: 50px;
-    font-weight: 600;
-    animation: move 10s ease-in-out infinite;
-    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-                 0px -5px 35px rgba(202, 196, 22, 0.3);
-                
-}
-@keyframes move {
-    0% {
-        color: #F4A460;
-        letter-spacing: 2px;
-    }
-    25% {
-        color: rgb(47, 193, 191);
-        letter-spacing: 3px;
-    }
-    50% {
-        color: rgb(96, 6, 124);
-    }
-    75% {
-        color: rgb(180, 208, 25);
-    }
-    100%{
-        color: #FF1493;
-        letter-spacing: 1px;
-    }
-}
-.welcome p {
-    font-size: 15px;
-    margin: 20px 0 15px 0;
-
-}
-.button-b {
-    display: flex;
-    justify-content: space-evenly;
-} */
-
-/*Responsive web using @media query*/
-/* @media (max-width: 640px){
-     .navigation a{
-        font-size: 10px;
-    }
-    .welcome {
-        width: 70%;
-        margin: 0 auto;
-    }
-    .welcome h1 {
-        font-size: 20px;
-    }
-    .button-b {
-        width: 80%;
-        height: auto;
-    }
-}
-
-@media (min-width: 641px) and (max-width:1007px) {
-    .welcome {
-        width: 70%;
-        margin: 0 auto;
-    }
-    .welcome h1 {
-        font-size: 38px;
-    }
-    .button-b {
-        width: 80%;
-        height: auto;
-    }
-} */

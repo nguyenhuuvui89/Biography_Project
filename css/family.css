@@ -209,15 +209,16 @@
     .ptext {
         margin: 5rem 5rem;
         text-align: justify;
+        font-size: 3rem;
     }
     .main_fa {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     article p{
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     article table{
-        font-size: 2rem;        
+        font-size: 3rem;        
     }
     .travel{
         margin: 20% 0;

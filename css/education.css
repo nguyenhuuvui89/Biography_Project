@@ -57,7 +57,10 @@ figure figcaption, .note{
 }
 .video_intro iframe {
     height: 50vh;
-    width: 40vw;
+    width: 90%;
+    padding-left: 5vw;
+    border: none;
+    
 }
 .video_intro {
     padding-bottom: 1.5rem;
