@@ -1,4 +1,6 @@
-
+:root {
+    font-size: 62.5%;
+}
 .main {
     background-color: #D9AFD9;
     background-image: linear-gradient(116deg, #D9AFD9 0%, #97D9E1 50%, #99ceac 100%);
@@ -76,7 +78,7 @@ form {
     background: none;
     border: none;
     outline: none;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 .input-text i {

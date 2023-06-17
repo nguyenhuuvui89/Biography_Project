@@ -1,4 +1,6 @@
-
+:root {
+    font-size: 62.5%;
+}
 main {
     background-image: linear-gradient(62deg, rgb(233, 231, 194) 0%, #dcd3d3 50%, #d6c2e8 100%);
 }
@@ -23,7 +25,7 @@ main {
     flex-direction: column;
     row-gap: 2rem;
     padding: 2rem 4.5rem;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     font-size: 1.6rem;
     border: 1px solid #b2a0a0;
 }
@@ -50,7 +52,7 @@ form label {
     height: 40rem;
     border-radius: 1.5rem;
     position: relative; 
-    border: 2px solid #b2a0a0;
+    border: 0.2rem solid #b2a0a0;
     
 }
 .profile {
@@ -125,7 +127,7 @@ form label {
     width: 100%;
     height: 4rem;
     border-radius: 1.5rem;
-    border: 2px solid #b2a0a0;
+    border: 0.2rem solid #b2a0a0;
     border-bottom: none;
     background-color: transparent;
     border-left: none;

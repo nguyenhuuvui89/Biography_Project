@@ -1,6 +1,7 @@
-/* *{
-  border: 1px solid;
-} */
+
+:root {
+  font-size: 62.5%;
+}
 body {
   background-color: rgb(15, 23, 41);
 }

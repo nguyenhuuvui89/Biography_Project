@@ -1,27 +1,30 @@
+:root {
+    font-size: 62.5%;
+}
 
 .main_fa {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto;
     font-size: 1.6rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; 
     background-color: #bdbfd0;
     background-image: linear-gradient(65deg, #80ac9f 10%, #b1cddf 38%, #acaed6 69%, #c4deb7 86%);
+
     
 }
 /*CSS for family section */
 .family_v {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 40vh auto;
+    grid-template-columns: auto;
+    grid-template-rows: 32rem auto;
     row-gap: 1vh;
     column-gap: 1vw;
+    /* width: 100vw;   */
 }
 .title {
     display: flex;
     flex-direction: column;
-    grid-column: 1/4;
-    grid-row: 1/2;
     align-items: center;
     justify-content: center;
     background-image: url(../pic/anders-jilden.jpg);
@@ -29,6 +32,8 @@
     background-position: center;
     filter: sepia(0.4);
     color: #ffffff;
+    flex-wrap: wrap;
+    /* width: 100vw; */
 }   
 .title span {
     font-size: 6.5rem;
@@ -40,13 +45,14 @@
     font-weight: 300;
 }
 /* ---Abum-- */
-
+.abum {
+    width: 100vw;
+}
 .ptext {
-    margin: 5rem 40rem;
+    margin: 5rem 30rem;
     text-align: justify;
 }
 .gallery{
-    width: 80rem;
     max-width: 80rem;
     height: 70rem;
     margin: auto;
@@ -154,7 +160,7 @@
 .travel {
     display: grid;
     grid-template-columns:1.5fr 1fr;
-    grid-template-rows: 85vh;
+    grid-template-rows: 70rem;
  }
  .travel article {
     display: flex;
@@ -195,3 +201,94 @@
     border: none;            
  }
  
+/* ---Responsive--- */
+@media screen and (max-width: 576px) {
+    :root {
+        font-size: 30%;
+    }
+    .main_fa {
+        font-size: 2.5rem;
+    }
+    article p{
+        font-size: 2.5rem;
+    }
+    article table{
+        font-size: 2rem;
+    }
+    .ptext {
+        margin: 5rem 20rem;
+        text-align: justify;
+    }
+}
+@media screen and (min-width:577px) and (max-width:767px) {
+    :root {
+        font-size: 40%;
+    }
+    .main_fa {
+        font-size: 2.5rem;
+    }
+    .ptext {
+        margin: 5rem 20rem;
+        text-align: justify;
+    }
+    article p{
+        font-size: 2.5rem;
+    }
+    article table{
+        font-size: 2rem;
+    }
+    .travel{
+        margin: 10% 0;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    :root {
+        font-size: 45%;
+    }
+    .main_fa {
+        font-size: 2rem;
+    }
+    .ptext {
+        margin: 5rem 20rem;
+        text-align: justify;
+    }
+    article p, article table{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (in-width: 1024px){
+    :root {
+        font-size: 62.5%;
+    }
+}
+/* @media (max-width: 576px) {
+    :root {
+        font-size: 30%;
+    }
+} */
+
+/* @media (max-width: 640px) {
+    .navigation {
+        flex-flow: column wrap;
+        display: flex;
+    }
+    .logo {
+        font-style: italic;
+        color: #fd5949;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    header {
+        background-color: #B7C4CF;
+    }
+    .footer-c, .social{
+        display: none;
+    }
+    footer {
+        height: 8vh;
+        background-color: #d6249f;
+    }
+} */
