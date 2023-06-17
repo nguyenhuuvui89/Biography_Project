@@ -77,7 +77,7 @@
  }
 
  .intro .mountain {
-     width: 31vw;
+     width: 40vw;
  }
 
  .intro hr {
@@ -136,6 +136,7 @@
      flex-direction: column;
      align-items: center;
      padding-top: 10vh;
+     gap: 5vw;
  }
 
  .skill-content {
@@ -164,6 +165,7 @@
  .contact-me p {
      font-size: 1.6rem;
      font-family: 'Poppins', sans-serif;
+     text-align: justify;
  }
 
  .skill:nth-child(2) {
@@ -196,3 +198,85 @@
     color: white;
 }
  
+
+/* ---Resoponsive--- */
+
+@media screen and (max-width: 480px) {
+    /* :root{
+        font-size: 50%;
+    } */
+    .main_con .name {
+        font-size: 7rem;
+    }
+    .intro .mountain {
+        width: 60vw;
+    }
+    .bird {
+        margin: 5vh 10vw 0 0;
+        width: 10vw;
+    }
+    .main_con .job-title {
+        font-size: 2rem;
+    }
+    .bottom-cloud{
+        width: 15vw;
+    }
+    .skill {
+        gap: 10vw;
+    }
+    .contact-me {
+        padding: 0 5vw;
+    }
+}
+@media screen and (min-width:481px) and (max-width: 590px) {
+    .main_con .name {
+        font-size: 7rem;
+    }
+    .intro .mountain {
+        width: 60vw;
+    }
+    .bird {
+        margin: 5vh 10vw 0 0;
+        width: 10vw;
+        height: auto;
+    }
+    .main_con .job-title {
+        font-size: 2rem;
+    }
+    .bottom-cloud{
+        width: 15vw;
+    }
+    .contact-me {
+        padding: 0 5vw;
+    }
+}
+
+@media screen and (min-width:591px) and (max-width:767px) {
+    .main_con .name {
+        font-size: 7rem;
+    }
+    .intro .mountain {
+        width: 60vw;
+    }
+    .bird {
+        margin: 5vh 10vw 0 0;
+        width: 10vw;
+        height: auto;
+    }
+    .bottom-cloud{
+        width: 15vw;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    .intro .mountain {
+        width: 60vw;
+    }
+    .bird {
+        margin: 5vh 10vw 0 0;
+        width: 10vw;
+        height: auto;
+    }
+    .bottom-cloud{
+        width: 15vw;
+    }
+}

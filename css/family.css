@@ -280,7 +280,7 @@
     }
 }
 
-@media screen and (in-width: 1024px){
+@media screen and (min-width: 1024px){
     :root {
         font-size: 62.5%;
     }

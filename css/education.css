@@ -66,3 +66,21 @@ figure figcaption, .note{
     color: #fff;
     font-style: italic;
 }
+
+/* ---Responsive--- */
+@media screen and (max-width: 767px) {
+    .vn_uni, .bu {
+        display: flex;
+        flex-direction: column;
+        gap: 10vw;
+    }
+    .vn_uni {
+        margin-bottom: 10vw;
+    }
+    .video_intro {
+        padding: 5vw;
+    }
+    .video_intro iframe{
+        width: 90%;
+    }
+}
