@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Poppins&family=Ubuntu&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -173,30 +172,26 @@ footer hr{
 }
 
 /* Responsive with media query. The navigation bar will switch to vertical
-using flex, logo will change color and font style change to italic, text will be in the 
-middle of header. header background color will change, as well as footer article and social media logo will be disappear
-with the footer background color will change.  */
-/* @media (max-width: 640px) {
+using flex, for nav and footer */
+@media (max-width: 767px) {
     .navigation {
         flex-flow: column wrap;
         display: flex;
     }
+    .social{
+        padding: 0;
+        font-size: 1.5rem;
+    }
     .logo {
-        font-style: italic;
-        color: #fd5949;
-        margin-top: auto;
-        margin-bottom: auto;
+        align-self: center;
+        font-size: 5rem;
     }
-    header {
-        background-color: #B7C4CF;
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .navigation a {
+        font-size: 1.5rem;
+        padding: 0;
     }
-    .footer-c, .social{
-        display: none;
-    }
-    footer {
-        height: 8vh;
-        background-color: #d6249f;
-    }
-} */
 
+}
    
