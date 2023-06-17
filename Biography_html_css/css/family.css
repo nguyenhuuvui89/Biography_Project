@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
     background-color: #bdbfd0;
     background-image: linear-gradient(65deg, #80ac9f 10%, #b1cddf 38%, #acaed6 69%, #c4deb7 86%);
-    ;
+    
 }
 /*CSS for family section */
 .family_v {
@@ -60,7 +60,7 @@
     left: 0;
     top: 0;
     display: flex;
-    transition: 1s; 
+    transition: 1.5s; 
     filter: sepia(0.3);
 }
 .item {
@@ -109,20 +109,21 @@
     height: 1rem;
     background-color: rgb(108, 154, 178);
     margin: 1rem;
-    border-radius: 20px;
+    border-radius: 2rem;
     transition: 0.2s;
     width: 1rem;
     list-style: none;
+    cursor: pointer;
 
 }
 .gallery .act{
-    width: 30px;
+    width: 3rem;
     background-color: rgb(52, 8, 156);
 }
 
  /*Css for Interest section */
 .interest span{
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 800;
     font-family: 'Dancing Script', sans-serif, cursive; 
 }
@@ -147,8 +148,8 @@
  .interest_pic img {
     width: 30%;
     height: 100%;
-    border-radius: 10px;
-    margin: 10px;
+    border-radius: 1rem;
+    margin: 1rem;
  }
 .travel {
     display: grid;
@@ -163,16 +164,14 @@
     text-align: justify;
     font-style: italic;
     padding: 0% 10%;
+    font-size: 1.4rem;
  }
- .travel p{
-    font-size: 14px;
- }
+ 
  .travel table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     width: 50%;
     font-weight: 200;
-    font-size: 1rem;
  }
  .travel th {
     font-weight: 500;
@@ -189,10 +188,10 @@
  .travel button {
     background-image: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
     cursor: pointer; 
-    font-size: 16px;
-    padding: 10px;
+    font-size: 1.6rem;
+    padding: 1rem;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 0.8rem;
     border: none;            
  }
  
