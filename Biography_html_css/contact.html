@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/globalstyles.css">
 
     <script src="https://kit.fontawesome.com/b5afc0fae8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Poppins&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Poppins&family=Sacramento&family=Ubuntu&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <a id="top"></a>
     <header>
         <a href="#" class="logo">Portfolio</a>
         <nav class="navigation">
-          <a href="professional.html">Home</a>
-          <a href="family.html">Family</a>
-          <a href="education.html">Education</a>
-          <a href="location.html">Town</a>
-          <a href="hobbies.html">Hobbies</a>
-          <a class="active" href="contact.html">Contact</a>
-          <a href="index.html">Log In</a>
+            <a href="professional.html">Home</a>
+            <a href="family.html">Family</a>
+            <a href="education.html">Education</a>
+            <a href="location.html">Town</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a class="active" href="contact.html">Contact</a>
+            <a href="index.html">Log In</a>
         </nav>
     </header>
     <main class="contact_cont">
-        <section class="connect"> 
+        <section class="connect">
             <div class="connect_part">
-                <h2> Let's talk about everthing ! &#127915;</h2>
+                <h2> Let's talk ! &#127915;</h2>
                 <form>
                     <div class="date">
-                        <label for="meeting">Scheduling Date</label>
+                        <label for="meeting">Date</label>
                         <input type="date" name="meeting" id="meeting">
                     </div>
                     <div class="duration">
@@ -47,52 +51,74 @@
                         </select>
                     </div>
                     <div>
-                        <label for="meeting-method">Meeting Method</label>
-                        <input id = "meeting-method" name="meeting-method" list="method"> 
+                        <label for="meeting-method">Method</label>
+                        <input id="meeting-method" name="meeting-method" list="method">
                         <datalist id="method">
                             <option value="Online"></option>
                             <option value="In-Person"></option>
                         </datalist>
                     </div>
                     <div class="bttn">
-                        <button type="submit">Let's connect</button>
+                        <button type="submit">Connect</button>
                     </div>
                 </form>
             </div>
-            <aside class="aside_pic">
-                <p>              
-                    Vincent Nguyen is a friendly and socialize person who loves to make new friends,
-                    and new connections. He enjoys learning about other person's story and sharing his own, whether it's through stories about his travel or his hobbies
-                    or working experience.
-                </p>
-                <figure>
-                    <img src="./pic/vincent.jpeg" alt="Vincent picture" width="300" height="350">
-                    <figcaption>
-                        <i>Fig.1 - Vincent Nguyen.</i> 
-                    </figcaption>
-                </figure>
-            </aside>
+            <section class="aside_pic">
+                <div class="header-chat">
+                    <div class="profile">
+                        <figure>
+                            <img src="./pic/vincent.jpeg" alt="Vincent picture" width="300" height="350">
+                        </figure>
+                        <p>Vincent N.</p>
+                    </div>
+                    <div class="symbol">
+                        <p>...</p>
+                        <p>x</p>
+                    </div>
+                    <div class="chat">
+                        <div class="image">
+                            <figure>
+                                <img src="./pic/vincent.jpeg" alt="Vincent picture" width="300" height="350">
+                            </figure>
+                        </div>
+                        <div class="message">
+                            <p class="mes">Hello! Thanks for connecting with me. I am
+                                excited to talk to you.
+                            </p>
+                            <p class="time">1m ago</p>
+                        </div>
+                    </div>
+                    <div class="chat2">
+                        <div class="image">
+                            <figure>
+                                <img src="./pic/vincent.jpeg" alt="Vincent picture" width="300" height="350">
+                            </figure>
+                        </div>
+                        <div class="message">
+                            <p class="mes">Vincent Ng. is a friendly and socialize person who loves to make new friends,
+                                and new connections. He enjoys learning about other person's story and sharing his own, whether it's through stories about his travel or his hobbies
+                                or working experience.
+                            </p>
+                            <p class="time">1m ago </p>
+                            
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <input type="text" name="reply" id="reply1">
+                        <i class="fa-solid fa-reply fa-lg"></i>
+                    </div>
+                </div>
+            </section>
         </section>
         <section class="contact_m">
-            <div class="contact_part">
-                <h2>Contact Me</h2>
-                <form>
-                    <label for="name">Full Name</label> <br>
-                    <input type="text" name="fullname" id="name" placeholder="Name"> <br> <br>
-                    <label for="subject">Subject</label> <br>
-                    <input type="text" name="subject" id="subject" placeholder="Subject"> <br><br>
-                    <label for="email">Email</label> <br>
-                    <input type="email" name="email" id="email" placeholder="Email"> <br><br>
-                    <label for="message">Message</label> <br>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea> <br>
-                    <input type="submit" value="Send Message" class="send_msg">
-                </form>
-            </div>
             <figure class="map_google">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172567.54811936096!2d-52.994447266994804!3d47.48274516973691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca38e6b0aa261%3A0x9e1fd4001f12261f!2sSt.%20John&#39;s%2C%20NL!5e0!3m2!1sen!2sca!4v1684764897855!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172567.54811936096!2d-52.994447266994804!3d47.48274516973691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca38e6b0aa261%3A0x9e1fd4001f12261f!2sSt.%20John&#39;s%2C%20NL!5e0!3m2!1sen!2sca!4v1684764897855!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </figure>
         </section>
-    </main> 
+    </main>
     <footer>
         <section class="top-footer">
             <div class="footer-col1">
@@ -136,22 +162,23 @@
         <hr>
         <section class="bottom">
             <div class="copy-right">
-                <details> 
+                <details>
                     <summary> &#169; 2023 Vincent N. All Rights Reserved.</summary>
                     &#169;2022 by Vincent Nguyen, St John's, Canada.
-                    All pictures come from https://image.unsplash.com 
-                </details> 
+                    All pictures come from https://image.unsplash.com
+                </details>
                 <!-- <a href="#top">Back to Top ↑</a> -->
             </div>
             <div class="social">
                 <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
                 <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
-                <a href="https://www.instagram.com/" class="fa fa-instagram"></a> 
-                <a href="https://www.facebook.com/" class="fa fa-twitter"></a> 
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://www.facebook.com/" class="fa fa-twitter"></a>
                 <a href="https://www.google.com/" class="fa fa-google"></a>
             </div>
         </section>
     </footer>
 
 </body>
+
 </html>

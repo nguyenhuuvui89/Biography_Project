@@ -7,7 +7,7 @@ const dotBar = gallery.querySelectorAll('.dot-bar li');
 
 const imgArrLen = imgArr.length - 1;
 let i = 0;
-let setIntervalTime = setInterval(() => { rightArrow.click(); }, 5000);
+let setIntervalTime = setInterval(() => { rightArrow.click(); }, 4000);
 
 // Move image function
 function moveImage() {
@@ -15,7 +15,7 @@ function moveImage() {
   document.querySelector('.act').classList.remove('act');
   dotBar[i].classList.add('act');
   clearInterval(setIntervalTime);
-  setIntervalTime = setInterval(() => { rightArrow.click(); }, 5000);
+  setIntervalTime = setInterval(() => { rightArrow.click(); }, 4000);
 }
 
 // Applied event to arrow buttons
