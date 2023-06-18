@@ -7,7 +7,6 @@
     font-family: 'Roboto', sans-serif;
 }
 .active {
-    display: relative;
     padding: 1rem;
     opacity: 0.9;
     background-color: #85FFBD;
@@ -53,7 +52,7 @@ header {
     border-radius: 1rem;
     padding: 0 .5rem;
     font-family: 'Poppins', sans-serif;
-    display: relative;
+    /* display: relative; */
 }
 .navigation a:hover {
     color: black; 
