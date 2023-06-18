@@ -36,6 +36,6 @@ searchForm.addEventListener('submit', (e) => {
 // Add click into button to show more images
 btn.addEventListener('click', (e) => {
   e.preventDefault();
-  page++;
+  page += 1;
   loadData();
 });

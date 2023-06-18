@@ -12,7 +12,8 @@
     <script src="https://kit.fontawesome.com/b5afc0fae8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Poppins&family=Sacramento&family=Ubuntu&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Poppins&family=Sacramento&family=Ubuntu&display=swap"
         rel="stylesheet">
 </head>
 
@@ -21,13 +22,13 @@
     <header>
         <a href="#" class="logo">Portfolio</a>
         <nav class="navigation">
-          <a href="professional.html">Home</a>
-          <a href="family.html">Family</a>
-          <a href="education.html">Education</a>
-          <a class="active" href="location.html">Town</a>
-          <a href="hobbies.html">Hobbies</a>
-          <a href="contact.html">Contact</a>
-          <a href="index.html">Log In</a>
+            <a href="professional.html">Home</a>
+            <a href="family.html">Family</a>
+            <a href="education.html">Education</a>
+            <a class="active" href="location.html">Town</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="contact.html">Contact</a>
+            <a href="index.html">Log In</a>
         </nav>
     </header>
     <main>
@@ -55,20 +56,38 @@
                 <img src="./pic/erik-mclean-5.jpg" alt="picture_5">
             </div>
         </section>
-        <section class="search">
-            <h1>Search More Images</h1>
-            <form id="searchForm">
-                <input type="text" name="box" id="box" placeholder="Search...">
-                <button>
-                    Search
-                </button>
-            </form>
-        </section>
-        <h3 class="error"></h3>
-        <section class="result">
-        </section>
-        <button class="show-more">Show More</button>
+        <!-- Search Part Using Javascript -->
+        <!-- <div id="app">
+            <section class="search">
+                <h1>Search More Images</h1>
+                <form id="searchForm">
+                    <input type="text" name="box" id="box" placeholder="Search...">
+                    <button>
+                        Search
+                    </button>
+                </form>
+            </section>
+            <h3 class="error"></h3>
+            <section class="result">
+            </section>
+            <button class="show-more">Show More</button>
+        </div> -->
 
+        <!-- Search Part Using Vue Js -->
+        <div id="app">
+            <section class="search">
+              <h1>Search More Images</h1>
+              <form @submit.prevent="submitForm" id="searchForm">
+                <input type="text" id ="box" v-model="keyword" placeholder="Search...">
+                <button @click="loadData">Search</button>
+              </form>
+            </section>
+            <h3 class="error">{{ errorMessage }}</h3>
+            <section class="result">
+              <img v-for="result in searchResults" :src="result.urls.small" :key="result.id">
+            </section>
+            <button :class="{ 'show-more': showMoreButton }" @click="loadMore">Next Page</button>
+          </div>       
     </main>
     <footer>
         <section class="top-footer">
@@ -129,7 +148,11 @@
             </div>
         </section>
     </footer>
-    <script src="./js/location.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <!-- vue script -->
+    <script src="./js/location_vue.js"></script>
+    <!-- Javascript script -->
+    <!-- <script src="./js/location.js"></script> -->
 </body>
 
 </html>

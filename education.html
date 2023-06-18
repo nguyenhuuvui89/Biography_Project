@@ -29,16 +29,16 @@
         </nav>
     </header>
     <main>
-        <section> 
+        <section id="app"> 
             <h2>Education</h2>
             <ol>
                 <li class="vn_uni">
                     <figure>
-                        <img src="./pic/uni.jpeg" alt="My uni">
+                        <img v-bind:src= "image" alt="My uni">
                         <figcaption> Fig.1 - Vietnam National University - Credit By Svleague </figcaption> 
                     </figure>
                     <aside class="aside_note">
-                            <p class="uni_name">Vietnam National University </p>
+                            <p class="uni_name">{{unvisersity[0]}} </p>
                             <p class="describe"> 
                             I achieved my bachelor's degree in Petroleum Engineering from the Vietnam National 
                             University in 2012. 
@@ -51,29 +51,21 @@
                 </li>
                 <li class="bu">
                     <div class="courses">
-                        <p class="boston"> Boston University</p>
+                        <p class="boston"> {{unvisersity[0]}}</p>
                         <p>Currently, I am pursuing Msc. Computer Information System in <b><i>Boston University</i></b>
                         I have completed 6 courses so far.</p>
                         <form>
-                            <input type="checkbox" name="CS300" id="CS300" checked>
-                            <label for="CS300">CS300 INTRO SOFT DEV</label> <br>
-                            <input type="checkbox" name="CS521" id="CS521" checked>
-                            <label for="CS521">CS521-INFO STR PYTHON</label> <br>
-                            <input type="checkbox" name="CS625" id="CS625" checked>
-                            <label for="CS625">CS625-BUS DATA COM NW</label> <br>
-                            <input type="checkbox" name="CS669" id="CS669" checked>
-                            <label for="CS669">CS669-DB DES IMP BUS</label> <br>
-                            <input type="checkbox" name="CS682" id="CS682" checked>
-                            <label for="CS682">CS682-INFO SYS ANALYS</label> <br>
-                            <input type="checkbox" name="CS689" id="CS689" checked>
-                            <label for="CS689">CS689-DES DATA WAREHS</label>
+                            <div v-for="course in courses">
+                                <input :key = "course.id" type="checkbox" :name='course.name' :id="course.id" v-model="course.checked">
+                                <label :for="course.id">{{course.name}}</label> 
+                            </div>
                         </form>
                     </div>
                     <div class="video_intro">
                             <p class="note"> Below is the quick introduction about Msc. Computer Information System which provided by Prof. Robert Schudy of Boston University Metropolitan College</p> <br>
-                        <iframe src="https://www.youtube.com/embed/E0TVI6PhX_8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        <iframe :src="youtubeLink" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                         </iframe>
-                        <p>- For more information about my program, please click to the <a href="http://www.bu.edu/csmet/">MET Computer Science.</a></p>
+                        <p>- For more information about my program, please click to the <a :href="program">MET Computer Science.</a></p>
                     </div>
                 </li>
             </ol>
@@ -138,5 +130,7 @@
             </div>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <script src="./js/educationVue.js"></script>
 </body>
 </html>

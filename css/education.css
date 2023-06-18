@@ -41,7 +41,7 @@ figure figcaption, .note{
     grid-template-columns: auto;
     grid-template-rows: auto;
 }
-.describe, .courses {
+.describe {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -49,6 +49,15 @@ figure figcaption, .note{
     padding: 0 15%;
     font-size: 1.4rem;
 }
+.courses {
+    text-align: justify;
+    padding: 0 15%;
+    font-size: 1.4rem;
+}
+form {
+    padding-top: 3rem;
+}
+
 .uni_name, .boston {
     font-size: 4rem;
     font-weight: 500;
@@ -59,8 +68,7 @@ figure figcaption, .note{
     height: 50vh;
     width: 90%;
     padding-left: 5vw;
-    border: none;
-    
+    border: none; 
 }
 .video_intro {
     padding-bottom: 1.5rem;

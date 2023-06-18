@@ -115,9 +115,10 @@ main {
   color: #000000;
   margin: 0 50%;
   transform: translateX(-50%);
-  visibility: hidden;
+  visibility: visible;
   margin-bottom: 5rem;
 }
+
 .result {
   width: 80%;
   margin: 5rem auto;
