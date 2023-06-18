@@ -1,78 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
     <link rel="stylesheet" href="./css/education.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/globalstyles.css">
 
     <script src="https://kit.fontawesome.com/b5afc0fae8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Poppins&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Poppins&family=Sacramento&family=Ubuntu&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <a id="top"></a>
     <header>
         <a href="#" class="logo">Portfolio</a>
         <nav class="navigation">
-          <a href="professional.html">Home</a>
-          <a href="family.html">Family</a>
-          <a class="active" href="education.html">Education</a>
-          <a href="location.html">Town</a>
-          <a href="hobbies.html">Hobbies</a>
-          <a href="contact.html">Contact</a>
-          <a href="index.html">Log In</a>
+            <a href="professional.html">Home</a>
+            <a href="family.html">Family</a>
+            <a class="active" href="education.html">Education</a>
+            <a href="location.html">Town</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="contact.html">Contact</a>
+            <a href="index.html">Log In</a>
         </nav>
     </header>
     <main>
-        <section id="app"> 
+        <section id="app">
             <h2>Education</h2>
             <ol>
                 <li class="vn_uni">
                     <figure>
-                        <img v-bind:src= "image" alt="My uni">
-                        <figcaption> Fig.1 - Vietnam National University - Credit By Svleague </figcaption> 
+                        <img v-bind:src="image" alt="My uni">
+                        <figcaption> Fig.1 - Vietnam National University - Credit By Svleague </figcaption>
                     </figure>
                     <aside class="aside_note">
-                            <p class="uni_name">{{unvisersity[0]}} </p>
-                            <p class="describe"> 
-                            I achieved my bachelor's degree in Petroleum Engineering from the Vietnam National 
-                            University in 2012. 
-                             It is located in the east of Ho Chi Minh City.
-                            It was established in 1995 with 135 departments and majors. There are 
+                        <p class="uni_name">{{unvisersity[0]}} </p>
+                        <p class="describe">
+                            I achieved my bachelor's degree in Petroleum Engineering from the Vietnam National
+                            University in 2012.
+                            It is located in the east of Ho Chi Minh City.
+                            It was established in 1995 with 135 departments and majors. There are
                             8 individual Universities which combined to be Vietnam National
                             University of Ho Chi Minh City. It has approximately 70.000 students.
-                            </p>
+                        </p>
                     </aside>
                 </li>
                 <li class="bu">
                     <div class="courses">
                         <p class="boston"> {{unvisersity[0]}}</p>
                         <p>Currently, I am pursuing Msc. Computer Information System in <b><i>Boston University</i></b>
-                        I have completed 6 courses so far.</p>
+                            I have completed 6 courses so far.</p>
                         <form>
                             <div v-for="course in courses">
-                                <input :key = "course.id" type="checkbox" :name='course.name' :id="course.id" v-model="course.checked">
-                                <label :for="course.id">{{course.name}}</label> 
+                                <input :key="course.id" type="checkbox" :name='course.name' :id="course.id"
+                                    v-model="course.checked">
+                                <label :for="course.id">{{course.name}}</label>
                             </div>
                         </form>
                     </div>
                     <div class="video_intro">
-                            <p class="note"> Below is the quick introduction about Msc. Computer Information System which provided by Prof. Robert Schudy of Boston University Metropolitan College</p> <br>
-                        <iframe :src="youtubeLink" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        <p class="note"> Below is the quick introduction about Msc. Computer Information System which
+                            provided by Prof. Robert Schudy of Boston University Metropolitan College</p> <br>
+                        <iframe :src="youtubeLink" title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
                         </iframe>
-                        <p>- For more information about my program, please click to the <a :href="program">MET Computer Science.</a></p>
+                        <p>- For more information about my program, please click to the <a :href="program">MET Computer
+                                Science.</a></p>
                     </div>
                 </li>
             </ol>
         </section>
     </main>
     <footer>
-        <section class="top-footer">
+        <!-- <section class="top-footer">
             <div class="footer-col1">
                 <h4>About</h4>
                 <ul>
@@ -104,33 +113,48 @@
             <div class="footer-col1">
                 <h4>About</h4>
                 <ul>
-                    <li>Technology</li>
-                    <li>Programming</li>
-                    <li>Development</li>
-                    <li>Database</li>
+                    <li>America</li>
+                    <li>Canada</li>
+                </ul>
+            </div>
+        </section> -->
+        
+        
+        <!-- Using Vue to render Footer -->
+        <section id="app2" class="top-footer">
+            <div v-for="section in footer" class="footer-col1">
+                <h4>{{ section.title }}</h4>
+                <ul>
+                    <li v-for="item in section.items">{{ item }}</li>
                 </ul>
             </div>
         </section>
         <hr>
         <section class="bottom">
             <div class="copy-right">
-                <details> 
+                <details>
                     <summary> &#169; 2023 Vincent N. All Rights Reserved.</summary>
                     &#169;2022 by Vincent Nguyen, St John's, Canada.
-                    All pictures come from https://image.unsplash.com 
-                </details> 
+                    All pictures come from https://image.unsplash.com
+                </details>
                 <!-- <a href="#top">Back to Top ↑</a> -->
             </div>
             <div class="social">
                 <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
                 <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
-                <a href="https://www.instagram.com/" class="fa fa-instagram"></a> 
-                <a href="https://www.facebook.com/" class="fa fa-twitter"></a> 
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://www.facebook.com/" class="fa fa-twitter"></a>
                 <a href="https://www.google.com/" class="fa fa-google"></a>
             </div>
         </section>
     </footer>
+    <!-- Using Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
     <script src="./js/educationVue.js"></script>
+
+    
+    <script src="./js/footerVue.js"></script>
+
 </body>
+
 </html>

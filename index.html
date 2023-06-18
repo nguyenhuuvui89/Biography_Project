@@ -112,7 +112,7 @@
             </section>
     </main>
     <footer>
-        <section class="top-footer">
+        <!-- <section class="top-footer">
             <div class="footer-col1">
                 <h4>About</h4>
                 <ul>
@@ -144,10 +144,21 @@
             <div class="footer-col1">
                 <h4>About</h4>
                 <ul>
-                    <li>Technology</li>
-                    <li>Programming</li>
-                    <li>Development</li>
-                    <li>Database</li>
+                    <li>America</li>
+                    <li>Canada</li>
+                </ul>
+            </div>
+        </section> -->
+        
+        
+        
+        
+        <!-- Using Vue to render Footer -->
+        <section id="app2" class="top-footer">
+            <div v-for="section in footer" class="footer-col1">
+                <h4>{{ section.title }}</h4>
+                <ul>
+                    <li v-for="item in section.items">{{ item }}</li>
                 </ul>
             </div>
         </section>
@@ -171,5 +182,9 @@
         </section>
     </footer>
     <script src="./js/index.js"></script>
+
+    <!-- Footer by using Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <script src="./js/footerVue.js"></script>
 </body>
 </html>

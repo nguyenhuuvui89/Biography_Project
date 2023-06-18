@@ -76,22 +76,23 @@
         <!-- Search Part Using Vue Js -->
         <div id="app">
             <section class="search">
-              <h1>Search More Images</h1>
-              <form @submit.prevent="submitForm" id="searchForm">
-                <input type="text" id ="box" v-model="keyword" placeholder="Search...">
-                <button @click="loadData">Search</button>
-              </form>
+                <h1>Search More Images</h1>
+                <form @submit.prevent="submitForm" id="searchForm">
+                    <input type="text" id="box" v-model="keyword" placeholder="Search...">
+                    <button @click="loadData">Search</button>
+                </form>
             </section>
             <h3 class="error">{{ errorMessage }}</h3>
             <section class="result">
-              <img v-for="result in searchResults" :src="result.urls.small" :key="result.id">
+                <img v-for="result in searchResults" :src="result.urls.small" :key="result.id">
             </section>
-            <button :class="{ 'show-more': showMoreButton }" @click="loadMore">Next Page</button>
-          </div>       
+            <button class="show-more-hidden" :class="{showMoreVisible: showMoreButton}" @click="loadMore">Next
+                Page</button>
+        </div>
     </main>
     <footer>
-        <section class="top-footer">
-            <div class="footer-col1">
+        <!-- <section class="top-footer"> -->
+        <!-- <div class="footer-col1">
                 <h4>About</h4>
                 <ul>
                     <li>Technology</li>
@@ -122,10 +123,18 @@
             <div class="footer-col1">
                 <h4>About</h4>
                 <ul>
-                    <li>Technology</li>
-                    <li>Programming</li>
-                    <li>Development</li>
-                    <li>Database</li>
+                    <li>America</li>
+                    <li>Canada</li>
+                </ul>
+            </div> -->
+        <!-- </section> -->
+
+        <!-- Using Vue to render footer -->
+        <section id="app2" class="top-footer">
+            <div v-for="section in footer" class="footer-col1">
+                <h4>{{ section.title }}</h4>
+                <ul>
+                    <li v-for="item in section.items">{{ item }}</li>
                 </ul>
             </div>
         </section>
@@ -153,6 +162,9 @@
     <script src="./js/location_vue.js"></script>
     <!-- Javascript script -->
     <!-- <script src="./js/location.js"></script> -->
+
+    
+    <script src="./js/footerVue.js"></script>
 </body>
 
 </html>

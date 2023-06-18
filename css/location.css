@@ -105,7 +105,7 @@ main {
 #box::placeholder{
   color: blue;
 }
-.show-more{
+.show-more-hidden{
   background-image: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
   border-radius: 18px;
   cursor: pointer; 
@@ -115,10 +115,12 @@ main {
   color: #000000;
   margin: 0 50%;
   transform: translateX(-50%);
-  visibility: visible;
+  visibility: hidden;
   margin-bottom: 5rem;
 }
-
+.showMoreVisible {
+  visibility: visible;
+}
 .result {
   width: 80%;
   margin: 5rem auto;
