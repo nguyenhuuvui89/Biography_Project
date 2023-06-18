@@ -202,7 +202,10 @@ article {
 }
 .image, .sig {
   padding: 5vh 2vw;
-
+}
+.image img {
+  width: 100%;
+  height: 100%;
 }
 
 .article-1 h1 {
