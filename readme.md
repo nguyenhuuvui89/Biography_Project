@@ -12,6 +12,7 @@ Or My github link: https://github.com/nguyenhuuvui89/Biography_Project
 
 III. Summary.
     Please fill out and have ready for Final Demo.  Please turn in with your final submission.
+    - All of html css files are valid
     1.	How would you describe the website design?  Does it use a color theme?
         My website is all about my biography, I have implemented it with html, css, Javascript and Vue Js (I use Vue for all footer, Education page, fetching Unsplash API on Town page). I have used various theme of color, linear gradient color
 
