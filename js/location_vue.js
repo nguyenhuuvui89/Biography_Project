@@ -1,4 +1,4 @@
-// --Doing Vue---
+// --Doing Vue to fetch data from Unsplash---
 const app = new Vue({
   el: '#app',
   data: {
