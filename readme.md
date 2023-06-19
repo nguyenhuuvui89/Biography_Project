@@ -8,7 +8,7 @@ II. Run Program.
     3. Click to any html file to open, and click to Go Live in the left conner of Vs Code if you instal Live Server extension.
     4. Page will be loaded and you can switch to any pages in the navigation bar by clicking into it.
 Or My github link: https://github.com/nguyenhuuvui89/Biography_Project
-    My online host: 
+    My online host: https://nguyenhuuvui89.github.io/Biography_Project/
 
 III. Summary.
     Please fill out and have ready for Final Demo.  Please turn in with your final submission.
